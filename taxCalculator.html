@@ -228,33 +228,33 @@
           if (status == 2) { 
              // Compute tax for married filed separately
                if (income <= 9225){
-                 tax = income * 0.10;
+                 tax = 9225 * 0.10;
                  taxRate = 10;
                }//end of nested if
                else if (income <= 37450) {
-                 tax = income * 0.10 + (income - 9225) * 0.15;
+                 tax = 9225 * 0.10 + (income - 9225) * 0.15;
                  taxRate = 15;
                }//end of else if
                else if (income <= 75600) {
-                 tax = income * 0.10 + (37450 - 9225) * 0.15 + (income - 37450) * 0.25;
+                 tax = 9225 * 0.10 + (37450 - 9225) * 0.15 + (income - 37450) * 0.25;
                  taxRate = 25;
                } //end of else if
                else if (income <= 115225) {
-                 tax = income * 0.10 + (37450 - 9225) * 0.15 + (75600 - 37450) * 0.25 + (income - 75600) * 0.28;
+                 tax = 9225 * 0.10 + (37450 - 9225) * 0.15 + (75600 - 37450) * 0.25 + (income - 75600) * 0.28;
                  taxRate = 28;
                }//end of else if
                else if (income <= 205750) {
-                 tax = income * 0.10 + (37450 - 9225) * 0.15 + (75600 - 37450) * 0.25 + (115225 - 75600) * 0.28 +
+                 tax = 9225 * 0.10 + (37450 - 9225) * 0.15 + (75600 - 37450) * 0.25 + (115225 - 75600) * 0.28 +
                        (income - 115225) * 0.33;
                  taxRate = 33;
                }//end of else if
                else if (income <= 232425) {
-                  tax = income * 0.10 + (37450 - 9225) * 0.15 + (75600 - 37450) * 0.25 + (115225 - 75600) * 0.28 +
+                  tax = 9225 * 0.10 + (37450 - 9225) * 0.15 + (75600 - 37450) * 0.25 + (115225 - 75600) * 0.28 +
                        (205750 - 115225) * 0.33+ (income - 205750) * 0.35;
                   taxRate = 35;
                }//end of else if
                else {
-                  tax = income * 0.10 + (37450 - 9225) * 0.15 + (75600 - 37450) * 0.25 + (115225 - 75600) * 0.28 +
+                  tax = 9225 * 0.10 + (37450 - 9225) * 0.15 + (75600 - 37450) * 0.25 + (115225 - 75600) * 0.28 +
                        (205750 - 115225) * 0.33+ (232425 - 205750) * 0.35 + (income - 232425) * .396;
                   taxRate = 39.6;
                }//end of else
@@ -276,34 +276,34 @@
              
               if (status == 3) { 
              // Compute tax for married
-               if (income <= ){
+               if (income <= 13150){
                  tax = income * 0.10;
                  taxRate = 10;
                }//end of nested if
-               else if (income <= ) {
-                 tax =  * 0.10 + (income - ) * 0.15;
+               else if (income <= 50200) {
+                 tax = 13150 * 0.10 + (income - 13150) * 0.15;
                  taxRate = 15;
                }//end of else if
-               else if (income <= ) {
-                 tax =  * 0.10 + ( - ) * 0.15 + (income - ) * 0.25;
+               else if (income <= 129600) {
+                 tax = 13150 * 0.10 + (50200 - 13150) * 0.15 + (income - 50200) * 0.25;
                  taxRate = 25;
                } //end of else if
-               else if (income <= ) {
-                 tax =  * 0.10 + ( - ) * 0.15 + ( - ) * 0.25 + (income - ) * 0.28;
+               else if (income <= 209850) {
+                 tax = 13150 * 0.10 + (50200 - 13150) * 0.15 + (129600 - 50200) * 0.25 + (income - 129600) * 0.28;
                  taxRate = 28;
                }//end of else if
-               else if (income <= ) {
-                 tax =  * 0.10 + ( - ) * 0.15 + ( - ) * 0.25 + ( - ) * 0.28 +
-                       (income - ) * 0.33;
+               else if (income <= 411500) {
+                 tax = 13150 * 0.10 + (50200 - 13150) * 0.15 + (129600 - 50200) * 0.25 + (209850 - 129600) * 0.28 +
+                       (income - 209850) * 0.33;
                  taxRate = 33;
                }//end of else if
-               else if (income <= ) {
-                  tax =  * 0.10 + ( - ) * 0.15 + ( - ) * 0.25 + ( - ) * 0.28 +
-                       ( - ) * 0.33+ (income - ) * 0.35;
+               else if (income <= 439000) {
+                  tax = 13150 * 0.10 + (50200 - 13150) * 0.15 + (129600 - 50200) * 0.25 + (209850 - 129600) * 0.28 +
+                       (411500 - 209850) * 0.33+ (income - 411500) * 0.35;
                   taxRate = 35;
                }//end of else if
                else {
-                  tax =  * 0.10 + ( - ) * 0.15 + ( - ) * 0.25 + ( - ) * 0.28 +
+                  tax = 13150 * 0.10 + ( - ) * 0.15 + ( - ) * 0.25 + ( - ) * 0.28 +
                        ( - ) * 0.33+ ( - ) * 0.35 + (income - ) * .396;
                   taxRate = 39.6;
                }//end of else
